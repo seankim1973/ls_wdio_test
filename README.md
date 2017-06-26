@@ -13,4 +13,4 @@
 If you have questions, email me at blubecker@lifesize.com.
 
 Good luck, we are all counting on you!
-![](http://i.imgur.com/c80tSY5.gifv)
+![](http://i.imgur.com/c80tSY5.gif)
