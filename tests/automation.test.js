@@ -35,7 +35,7 @@ describe('My Awesome Website', () => {
       phone: myExtension //what should I be?,
     }
 
-    expect(data[2]).to.equal(thirdEntry)
+    expect(data).to.equal(expectedData)
   })
 
   it('BONUS: will show NEW chat messages', () => {
