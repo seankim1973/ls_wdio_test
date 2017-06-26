@@ -4,8 +4,8 @@
 
 * Fork this repo.
 * run ```npm install```.
-* run ```npm test```.
-* Make all the tests pass.
+* run ```npm test```. Only the first test should pass (which checks the title)
+* Make all the other tests pass.
 * Improve the framework as you see fit.
 * Push your completed work to your github page
 * Email me (blubecker@lifesize.com) when you have completed the task and send me the URL to your account's repo.
