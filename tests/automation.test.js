@@ -46,8 +46,8 @@ describe('My Awesome Website', () => {
 
     let thirdChat = {
       sender: 'Toby Flenderson',
-      time: '11:41 AM', //what should I be?
-      message: 'What are you guys doing for lunch?' //what should I be?,
+      time: '11:41 AM',
+      message: 'What are you guys doing for lunch?'
     }
 
     expect(data[2]).to.equal(thirdChat)
