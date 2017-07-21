@@ -1,8 +1,11 @@
 # Automation Test
 
+Requirements: Node, NPM
+
 ## Instructions
 
 * Fork this repo.
+* Clone it down locally
 * run ```npm install```.
 * run ```npm test```. Only the first test should pass (which checks the title)
 * Make all the other tests pass.
