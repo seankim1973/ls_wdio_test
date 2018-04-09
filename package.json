@@ -4,7 +4,7 @@
   "description": "Automation coding test using webdriver.io",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js"
+    "test": "wdio"
   },
   "author": "Bob Lubecker",
   "license": "ISC",
@@ -17,11 +17,12 @@
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.16.0",
     "babel-root-import": "^4.1.5",
-    "chai": "^4.0.2",
+    "chai": "^4.1.2",
     "mocha": "^3.4.2",
     "path": "^0.12.7",
-    "wdio-mocha-framework": "^0.5.10",
+    "wdio-mocha-framework": "^0.5.13",
     "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.4",
     "webdriverio": "^4.7.1"
   }
 }

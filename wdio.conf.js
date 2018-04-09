@@ -33,7 +33,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        'tests/*.js'
+        './tests/*.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -106,7 +106,7 @@ exports.config = {
     // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitForXXX commands.
-    waitforTimeout: 1000,
+    waitforTimeout: 60000,
     //
     // Initialize the browser instance with a WebdriverIO plugin. The object should have the
     // plugin name as key and the desired plugin options as property. Make sure you have
@@ -128,7 +128,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide.html and click on "Reporters" in left column
-    reporters: ['dot'],
+    reporters: ['spec'],
     //
     // Some reporter require additional information which should get defined here
     reporterOptions: {

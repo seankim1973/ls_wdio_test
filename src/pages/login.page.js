@@ -1,26 +1,48 @@
-class LoginPage {
-  // elements
-  get extensionField() {
-    return browser.element("input#ext_field");
-  }
-  get loginButton() {
-    return browser.element("button#login_button");
-  }
+let page = require('./page.js');
+let config = require('../config/config.js');
 
-  // page methods
-  visit() {
-    browser.url(
-      "file:///" + __dirname + "../../../tests/test_pages/test_page_1.html"
-    );
-  }
+let LoginPage = Object.create(page, {
+    /**
+     * define elements
+     */
 
-  title() {
-    return browser.getTitle();
-  }
+    extensionField: {
+        get: function () {
+            return browser.element("input#ext_field");
+        }
+    },
 
-  login(extension) {
-    // what am I supposed to do again?
-  }
-}
+    loginButton: {
+        get: function () {
+            return browser.element("button#login_button");
+        }
+    },
 
-export default LoginPage;
+
+    /**
+     * define page methods
+     */
+
+    visitTestPage: {
+        value: function () {
+            page.open.call(this, config.testPageUrl);
+        }
+    },
+
+
+    getTitle: {
+        value: function () {
+            return browser.getTitle();
+        }
+    },
+
+    login: {
+        value: function (extension) {
+            page.EnterText(this.extensionField, extension);
+            page.Click(this.loginButton);
+        }
+    }
+
+});
+
+module.exports = LoginPage;
